@@ -1,0 +1,19 @@
+[package]
+name = "r9ktg"
+version = "0.1.0"
+edition = "2021"
+license = "BSD-2-Clause-Patent"
+
+[dependencies]
+color-eyre = "0.6.2"
+envy = "0.4.2"
+serde = { version = "1.0.140", features = ["derive"] }
+serde_json = "1.0.82"
+size_format = "1.0.2"
+sled = "0.34.7"
+teloxide = { version = "0.10.1", default-features = false, features = ["rustls", "ctrlc_handler"] }
+tokio = { version = "1.20.0", features = ["macros", "rt-multi-thread", "rt"] }
+tracing = "0.1.35"
+tracing-futures = "0.2.5"
+tracing-subscriber = { version = "0.3.15", features = ["env-filter"] }
+xxhash-rust = { version = "0.8.5", features = ["xxh3"] }
